@@ -1,2 +1,2 @@
-# DevGuild---ASU---Official-Website
+# DevGuild-Website
 Official Website for DevGuild - ASU
