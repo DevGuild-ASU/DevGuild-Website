@@ -175,7 +175,15 @@
             <!-- COVERS -->
             <div class="panel">
                 <div class="pill-header"><span>Covers</span></div>
-        <div class="cover-img"><img src="../photos/featured-cover.jpg" alt="DevGuild DG event with student developers" /></div>
+        <div class="cover-img" data-cover-slider>
+          <div class="cover-slides">
+            <img class="cover-slide active" src="../photos/featured-cover.jpg" alt="DevGuild DG event with student developers" />
+            <img class="cover-slide" src="../photos/featured-cover-2.jpg" alt="DevGuild DG finalists at a technology event" />
+          </div>
+          <button class="cover-control cover-prev" type="button" aria-label="Previous featured cover">‹</button>
+          <button class="cover-control cover-next" type="button" aria-label="Next featured cover">›</button>
+          <div class="cover-dots" aria-label="Featured cover slides"><button class="cover-dot active" type="button" aria-label="Show first cover"></button><button class="cover-dot" type="button" aria-label="Show second cover"></button></div>
+        </div>
             </div>
 
             <!-- SUPPORT -->
@@ -263,7 +271,8 @@
         <p class="footer-copy">© 2026 DevGuild DG — Built with curiosity.</p>
     </footer>
 
-    <script src="../js/theme.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/slider.js"></script>
     <script>
         const toggle = document.getElementById('menuToggle');
         const nav = document.getElementById('siteNav');
