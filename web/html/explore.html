@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800;900&family=Oswald:wght@600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="../css/explore.css" />
+    <link rel="stylesheet" href="../css/header.css" />
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <nav class="site-nav" id="siteNav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="explore.html" aria-current="page">Explore</a>
-            <a href="index.html#programs">Album</a>
+      <a href="album.html">Album</a>
             <a href="index.html#vision-mission">About</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -82,20 +83,20 @@
             <div class="panel">
                 <div class="pill-header"><span>Projects</span></div>
                 <div class="chars-grid">
-                    <div class="char-card">
-                        <div class="char-bg">💻</div>
+                    <a class="char-card" href="#aquanons-story" aria-label="View the AQUANONS project story">
+                        <div class="char-bg"><img src="../photos/aquanons.png" alt="Aquanons logo" /></div>
                         <div class="char-label">Aquanons</div>
-                    </div>
+                    </a>
                     <div class="char-card">
-                        <div class="char-bg">🎨</div>
+                        <div class="char-bg"><img src="../photos/handa.webp" alt="Handa 360 logo" /></div>
                         <div class="char-label">BFUR64/HANDA 360</div>
                     </div>
                     <div class="char-card">
-                        <div class="char-bg">📊</div>
+                        <div class="char-bg"><img src="../photos/tabang.png" alt="Tabang logo" /></div>
                         <div class="char-label">TABANG</div>
                     </div>
                     <div class="char-card">
-                        <div class="char-bg">🧠</div>
+                        <div class="char-bg"><img src="../photos/sigmanhwa.png" alt="Sigmanhwa logo" /></div>
                         <div class="char-label">SIGMANHWA</div>
                     </div>
                     <div class="char-card">
@@ -248,6 +249,31 @@
         </div><!-- /right-col -->
 
     </div><!-- /explore-body -->
+
+    <!-- ── PROJECT STORIES ───────────────────────────────────── -->
+    <section class="project-stories" aria-labelledby="project-stories-title">
+        <div class="project-stories-heading">
+            <h1 id="project-stories-title">PROJECT STORIES</h1>
+        </div>
+
+        <article class="project-story" id="aquanons-story">
+            <div class="project-story-media">
+                <img src="../photos/aquanons-project.jpg" alt="AQUANONS team at AI Fest 2026" />
+            </div>
+            <div class="project-story-content">
+                <span class="project-story-number">01</span>
+                <h3>AQUANONS</h3>
+                <p>Aklan State University continues to make its mark in artificial intelligence and innovation as the AQUANONS team from the College of Computer Studies – ASU Kalibo secured 2nd Place in the School-Based Category of the 2026 AI Hackathon during AI Fest 2026, held at the Iloilo Convention Center from August 3–5, 2026.</p>
+                <p>Competing against 47 teams from State Universities and Colleges (SUCs) across the country, the team first earned a coveted Top 10 spot before advancing to the final pitching round, where they ultimately emerged as the 2nd Place winner.</p>
+                <p>The award-winning team is composed of Arnold R. Paghunasan, Daniel Joseph R. Orlina, Doreen Kay P. Lachica, Jade N. Salvador, and Lenard Angelo A. Olajay, under the guidance of their coaches, Miquel Von Oquendo and Edward Gumban.</p>
+                <p>This remarkable achievement reflects Aklan State University's commitment to fostering innovation, developing future-ready talents, and empowering students to create AI-driven solutions that address real-world challenges.</p>
+                <div class="project-story-link">
+                    <p>This is the AQUANONS project repository, where you can find the source code, documentation, and full project details.</p>
+                    <a class="btn-red" href="https://github.com/Aquanons/AIHackathon2026_Aquanons_AqOne.git" target="_blank" rel="noopener noreferrer">View full project on GitHub ↗</a>
+                </div>
+            </div>
+        </article>
+    </section>
 
     <!-- ── FOOTER ─────────────────────────────────────────────── -->
     <footer class="explore-footer">
