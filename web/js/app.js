@@ -1,5 +1,10 @@
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
+const pageLoader = document.querySelector('#pageLoader');
+
+window.addEventListener('load', () => {
+  window.setTimeout(() => pageLoader?.classList.add('is-hidden'), 4000);
+});
 
 menuButton?.addEventListener('click', () => {
   const isOpen = navigation.classList.toggle('open');
