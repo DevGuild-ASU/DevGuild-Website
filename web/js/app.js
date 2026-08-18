@@ -4,7 +4,7 @@ const navigation = document.querySelector('.site-nav');
 menuButton?.addEventListener('click', () => {
   const isOpen = navigation.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', String(isOpen));
-  menuButton.textContent = isOpen ? '×' : '☰';
+  menuButton.textContent = isOpen ? '✕' : '☰';
 });
 
 navigation?.querySelectorAll('a').forEach((link) => {
@@ -15,7 +15,7 @@ navigation?.querySelectorAll('a').forEach((link) => {
   });
 });
 
-const revealItems = document.querySelectorAll('.feature-card, .program-list article, .timeline article, .quote-card');
+const revealItems = document.querySelectorAll('.feature-card, .program-list article, .timeline article, .quote-card, .policy-section.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

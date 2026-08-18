@@ -7,6 +7,9 @@ document.querySelectorAll('[data-album-slider]').forEach((albumSlider) => {
   const dots = [...albumSlider.querySelectorAll('.slide-dot')];
   let index = 0;
   let startX = 0;
+  let timer = null;
+  const INTERVAL = 4000;
+
   const fitSlider = (slide) => {
     if (slide.naturalWidth && slide.naturalHeight) albumSlider.style.aspectRatio = `${slide.naturalWidth} / ${slide.naturalHeight}`;
   };
@@ -16,14 +19,29 @@ document.querySelectorAll('[data-album-slider]').forEach((albumSlider) => {
     dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
     fitSlider(slides[index]);
   };
+
+  const startTimer = () => {
+    stopTimer();
+    timer = setInterval(() => show(index + 1), INTERVAL);
+  };
+  const stopTimer = () => { if (timer) { clearInterval(timer); timer = null; } };
+  const resetTimer = () => { stopTimer(); startTimer(); };
+
   slides.forEach((slide) => slide.addEventListener('load', () => { if (slide.classList.contains('active')) fitSlider(slide); }));
   fitSlider(slides[0]);
-  albumSlider.querySelector('.previous')?.addEventListener('click', () => show(index - 1));
-  albumSlider.querySelector('.next')?.addEventListener('click', () => show(index + 1));
-  dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
-  albumSlider.addEventListener('touchstart', (event) => { startX = event.changedTouches[0].clientX; }, { passive: true });
+
+  albumSlider.querySelector('.previous')?.addEventListener('click', () => { show(index - 1); resetTimer(); });
+  albumSlider.querySelector('.next')?.addEventListener('click', () => { show(index + 1); resetTimer(); });
+  dots.forEach((dot, i) => dot.addEventListener('click', () => { show(i); resetTimer(); }));
+  albumSlider.addEventListener('touchstart', (event) => { startX = event.changedTouches[0].clientX; stopTimer(); }, { passive: true });
   albumSlider.addEventListener('touchend', (event) => {
     const distance = event.changedTouches[0].clientX - startX;
     if (Math.abs(distance) > 45) show(index + (distance < 0 ? 1 : -1));
+    startTimer();
   }, { passive: true });
+
+  albumSlider.addEventListener('mouseenter', stopTimer);
+  albumSlider.addEventListener('mouseleave', startTimer);
+
+  startTimer();
 });
