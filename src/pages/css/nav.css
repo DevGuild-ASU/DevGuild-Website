@@ -3,6 +3,9 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    position: sticky;
+    top: 0;
+
     padding: 0.5rem 2rem;
 
     background-color: var(--surface-2);
