@@ -2,9 +2,20 @@ const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
 const pageLoader = document.querySelector('#pageLoader');
 
-window.addEventListener('load', () => {
-  window.setTimeout(() => pageLoader?.classList.add('is-hidden'), 4000);
-});
+if (pageLoader) {
+  const navigationEntry = performance.getEntriesByType('navigation')[0];
+  const isRefresh = navigationEntry?.type === 'reload';
+  const hasEnteredSite = sessionStorage.getItem('devguild-site-entered') === 'true';
+
+  if (!hasEnteredSite || isRefresh) {
+    sessionStorage.setItem('devguild-site-entered', 'true');
+    window.addEventListener('load', () => {
+      window.setTimeout(() => pageLoader.classList.add('is-hidden'), 4000);
+    });
+  } else {
+    pageLoader.classList.add('is-hidden');
+  }
+}
 
 menuButton?.addEventListener('click', () => {
   const isOpen = navigation.classList.toggle('open');
