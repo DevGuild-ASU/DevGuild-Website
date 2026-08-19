@@ -1,4 +1,8 @@
 // @ts-check
+/// <reference types="vite/client" />
+
+import './index.css';
+import './colors.css';
 
 import { Route, Routes } from "react-router";
 
@@ -13,7 +17,7 @@ export default function App () {
     return (
         <main>
             <Routes>
-                <Route path="/home" element={<Home />}></Route>
+                <Route path="" element={<Home />}></Route>
                 <Route path="/explore" element={<Explore />}></Route>
                 <Route path="/album" element={<Album />}></Route>
                 <Route path="/about" element={<About />}></Route>

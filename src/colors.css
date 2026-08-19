@@ -1,0 +1,11 @@
+:root {
+    --accent: #118B36;
+
+    --text: white;
+    --subtext: #888888;
+
+    --surface: #0B0C0B;
+    --surface-2: #111111;
+
+    --border: rgba(255, 255, 255, 0.25);
+}
