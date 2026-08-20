@@ -1,4 +1,81 @@
-main section {
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
     min-height: 100dvh;
+    width: 85dvw;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 0;
+
     color: var(--text);
+}
+
+section a {
+    color: var(--text);
+
+    text-decoration: none;
+}
+
+section h1 {
+    margin: 2rem 0;
+
+    font-size: 5rem;
+    line-height: 90%;
+}
+
+.highlight-text {
+    color: var(--accent-2);
+}
+
+.section-subtext {
+    color: var(--accent-2);
+
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.subtext {
+    color: var(--subtext);
+}
+
+.button-group {
+    display: flex;
+
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1rem;
+
+    background-color: #1D1D1D;
+
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+
+    font-weight: bold;
+}
+
+.btn.active {
+    background-color: var(--accent);
+}
+
+.grid-container {
+    display: flex;
+
+    gap: 1rem;
+}
+
+.grid-container article {
+    padding: 2rem;
+
+    background-color: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
 }
