@@ -24,21 +24,15 @@ export default function Nav () {
                 </li>
                 <li>
                     <NavLink
-                        to="/explore"
-                        className={({ isActive }) => isActive ? "nav-active" : ""}
-                    >Explore</NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/album"
-                        className={({ isActive }) => isActive ? "nav-active" : ""}
-                    >Album</NavLink>
-                </li>
-                <li>
-                    <NavLink
                         to="/about"
                         className={({ isActive }) => isActive ? "nav-active" : ""}
                     >About</NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        to="/explore"
+                        className={({ isActive }) => isActive ? "nav-active" : ""}
+                    >Explore</NavLink>
                 </li>
                 <li>
                     <NavLink
@@ -48,9 +42,9 @@ export default function Nav () {
                 </li>
                 <li>
                     <NavLink
-                        to="/privacy"
+                        to="/faq"
                         className={({ isActive }) => isActive ? "nav-active" : ""}
-                    >Privacy</NavLink>
+                    >FAQ</NavLink>
                 </li>
             </ul>
         </header>

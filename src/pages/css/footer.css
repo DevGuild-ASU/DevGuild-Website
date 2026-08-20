@@ -1,10 +1,28 @@
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
     background-color: var(--surface-2);
     border-top: 1px solid var(--border);
+
+    color: var(--subtext);
 }
 
 footer p {
+    margin: 0;
+}
+
+footer a {
     color: var(--subtext);
 
-    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
