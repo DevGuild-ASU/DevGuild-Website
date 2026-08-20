@@ -55,8 +55,3 @@ html.light { --bg:#f5f2e9; --panel:#fffdf7; --line:#d5d0c5; --text:#172521; --mu
   .aquanons-gallery { grid-template-columns:1fr; grid-auto-rows:220px; }
   .aquanons-gallery article:nth-child(n), .aquanons-gallery article:first-child { grid-column:span 1; grid-row:span 1; }
 }
-/* Keep the shared header height consistent with Home and Explore. */
-.site-header { height:100px !important; min-height:100px; }
-@media (max-width:860px) {
-  .site-header { height:80px !important; min-height:80px; }
-}
