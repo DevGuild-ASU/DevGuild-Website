@@ -63,9 +63,9 @@ if (chatbotTrigger) {
         body: JSON.stringify({ message: trimmed })
       });
       const data = await response.json();
-      addMessage(response.ok ? data.reply : 'The DevGuild AI backend is not ready yet. Please start the local backend server.', 'ai');
+      addMessage(response.ok ? data.reply : getAnswer(trimmed), 'ai');
     } catch {
-      addMessage('I cannot reach the DevGuild AI backend yet. Please start the local backend server.', 'ai');
+      addMessage(getAnswer(trimmed), 'ai');
     }
   };
 
