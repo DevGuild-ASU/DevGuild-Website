@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start:ai": "node --env-file=.env server.js"
+    "start:ai": "node --env-file=.env server.js",
+    "start:web": "node static-server.js"
   }
 }
