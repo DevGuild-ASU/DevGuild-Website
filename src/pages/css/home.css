@@ -23,7 +23,7 @@ section a {
 }
 
 section h1 {
-    margin: 2rem 0;
+    margin: 1rem 0;
 
     font-size: 5rem;
     line-height: 90%;
@@ -51,7 +51,7 @@ section h1 {
 }
 
 .btn {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 
     background-color: #1D1D1D;
 
