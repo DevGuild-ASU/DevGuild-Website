@@ -1,0 +1,8 @@
+{
+  "name": "devguild-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:ai": "node --env-file=.env server.js"
+  }
+}
