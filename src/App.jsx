@@ -11,6 +11,7 @@ import Explore from "./pages/Explore.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Privacy from "./pages/Privacy.jsx";
+import Faq from './pages/Faq.jsx';
 
 export default function App () {
     return (
@@ -21,6 +22,7 @@ export default function App () {
                 <Route path="/about" element={<About />}></Route>
                 <Route path="/contact" element={<Contact />}></Route>
                 <Route path="/privacy" element={<Privacy />}></Route>
+                <Route path="/faq" element={<Faq />}></Route>
             </Routes>
         </main>
     );
