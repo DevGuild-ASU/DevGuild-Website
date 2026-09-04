@@ -1,30 +1,30 @@
 // @ts-check
 
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 export default function Nav () {
     return (
         <header>
-            <img src="" alt="" />
+            <img src="/photos/devguild-logo.png" alt="DevGuild DG Logo" />
 
             <ul>
                 <li>
-                    <NavLink to="">Home</NavLink>
+                    <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="">Explore</NavLink>
+                    <NavLink to="/explore">Explore</NavLink>
                 </li>
                 <li>
-                    <NavLink to="">Album</NavLink>
+                    <NavLink to="/album">Album</NavLink>
                 </li>
                 <li>
-                    <NavLink to="">About</NavLink>
+                    <NavLink to="/about">About</NavLink>
                 </li>
                 <li>
-                    <NavLink to="">Contacts</NavLink>
+                    <NavLink to="/contact">Contacts</NavLink>
                 </li>
                 <li>
-                    <NavLink to="">Privacy</NavLink>
+                    <NavLink to="/privacy">Privacy</NavLink>
                 </li>
             </ul>
         </header>
