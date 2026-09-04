@@ -1,0 +1,132 @@
+/* ── ALBUM PAGE STYLES ────────────────────────────────────────── */
+
+.featuredSection {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px 20px;
+}
+
+/* ── ALBUM LIBRARY ────────────────────────────────────────────── */
+.librarySection {
+  max-width: 1120px;
+  margin: auto;
+  padding: 28px 24px 85px;
+  text-align: center;
+}
+
+.libraryTitle {
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.08em;
+  margin: 0 0 42px;
+  color: var(--color-text);
+}
+
+.libraryTitle em {
+  font-family: var(--font-editorial);
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  text-align: left;
+}
+
+.galleryCard {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--color-card);
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.3s ease;
+}
+
+.galleryCard:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary-glow);
+  transform: translateY(-4px);
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.galleryCard:hover .galleryImage {
+  transform: scale(1.08);
+  filter: brightness(1.12);
+}
+
+.galleryLabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 14px 14px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+/* ── PROJECT ALBUMS (AQUANONS, TABANG, HANDA 360) ─────────────── */
+.projectAlbumSection {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px 88px;
+}
+
+.albumHeading {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.albumHeading h2 {
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: 0.02em;
+}
+
+.headingBlue h2 {
+  color: var(--color-blue);
+}
+
+.headingGreen h2 {
+  color: var(--color-primary);
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .featuredSection {
+    padding: 20px 16px 12px;
+  }
+
+  .librarySection {
+    padding: 20px 16px 60px;
+  }
+
+  .projectAlbumSection {
+    padding: 0 16px 60px;
+  }
+}
