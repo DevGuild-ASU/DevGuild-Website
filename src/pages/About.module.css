@@ -1,0 +1,201 @@
+/* ── ABOUT PAGE STYLES ────────────────────────────────────────── */
+
+.aboutSection {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: clamp(3.2rem, 7vw, 6rem);
+  letter-spacing: -0.08em;
+  line-height: 0.92;
+  margin: 0 0 24px;
+  color: var(--color-text);
+}
+
+.title em {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.intro {
+  max-width: 680px;
+  color: var(--color-muted);
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 56px;
+}
+
+.visionMissionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 64px;
+}
+
+.card {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-line);
+  padding: clamp(24px, 4vw, 40px);
+  border-radius: 8px;
+}
+
+.cardBadge {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  background: rgba(17, 139, 54, 0.16);
+  border: 1px solid rgba(17, 139, 54, 0.45);
+  border-left: 5px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: 0 0 18px rgba(17, 139, 54, 0.12);
+  margin-bottom: 24px;
+}
+
+.card h3 {
+  font-size: 1.85rem;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+  color: var(--color-text);
+}
+
+.card p {
+  color: var(--color-muted);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.goalsHeading {
+  margin-bottom: 28px;
+}
+
+.goalsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 64px;
+}
+
+.goalCard {
+  border-top: 2px solid var(--color-primary);
+  padding: 28px;
+  background: var(--color-bg-elevated);
+  border-radius: 6px;
+  border: 1px solid var(--color-line);
+  border-top: 2px solid var(--color-primary);
+}
+
+.goalNum {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.goalCard h3 {
+  font-size: 1.45rem;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin: 20px 0 16px;
+  color: var(--color-text);
+}
+
+.goalCard ul {
+  padding-left: 18px;
+  color: var(--color-muted);
+  list-style: disc;
+}
+
+.goalCard li + li {
+  margin-top: 10px;
+}
+
+.ctaBox {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.ctaBox h2 {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.ctaBox p {
+  color: var(--color-muted);
+  max-width: 520px;
+  margin: 0 auto 28px;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btnSecondary:hover {
+  background: rgba(17, 139, 54, 0.12);
+}
+
+@media (max-width: 860px) {
+  .visionMissionGrid,
+  .goalsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .aboutSection {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
