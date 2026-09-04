@@ -1,0 +1,63 @@
+/* ── DESIGN SYSTEM TOKENS ────────────────────────────────────────── */
+:root {
+  /* Brand / Primary */
+  --color-primary: #118b36;
+  --color-primary-dark: #086323;
+  --color-primary-glow: rgba(17, 139, 54, 0.55);
+
+  /* Dark Theme Surfaces (Default) */
+  --color-bg: #0d0d0d;
+  --color-bg-elevated: #111111;
+  --color-bg-deep: #161616;
+  --color-card: #0a0a0a;
+  --color-border: #1e1e1e;
+  --color-text: #e8e8e8;
+  --color-muted: #888888;
+  --color-line: #222222;
+
+  /* Accents */
+  --color-accent-bright: #35c76a;
+  --color-accent: #55d77d;
+  --color-accent-light: #aaffbe;
+  --color-accent-light-glow: #bfffd0;
+  --color-blue: #1689c9;
+  --color-bright-blue: #0078ff;
+
+  /* Social */
+  --color-telegram: #229ed9;
+  --color-whatsapp: #25d366;
+  --color-facebook: #1877f2;
+  --color-messenger: linear-gradient(135deg, #0078ff, #9b59b6);
+
+  /* Typography */
+  --font-sans: 'DM Sans', Inter, system-ui, -apple-system, sans-serif;
+  --font-display: 'Oswald', sans-serif;
+  --font-editorial: Georgia, serif;
+
+  /* Backward-compatible aliases */
+  --red: var(--color-primary);
+  --red-dk: var(--color-primary-dark);
+  --red-glow: var(--color-primary-glow);
+  --green: var(--color-primary);
+  --glow: var(--color-primary-glow);
+  --bg: var(--color-bg);
+  --bg2: var(--color-bg-elevated);
+  --bg3: var(--color-bg-deep);
+  --panel: var(--color-bg-elevated);
+  --card: var(--color-card);
+  --border: var(--color-border);
+  --text: var(--color-text);
+  --muted: var(--color-muted);
+  --line: var(--color-line);
+}
+
+html.light {
+  --color-bg: #f5f2e9;
+  --color-bg-elevated: #fffdf7;
+  --color-bg-deep: #eeeae0;
+  --color-card: #fffdf7;
+  --color-border: #d5d0c5;
+  --color-text: #172521;
+  --color-muted: #64716b;
+  --color-line: #d5d0c5;
+}
