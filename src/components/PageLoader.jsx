@@ -29,7 +29,7 @@ export default function PageLoader() {
     >
       <div className={styles.loaderMark}>
         <img
-          src="/photos/devguild-logo.png"
+          src={`${import.meta.env.BASE_URL}photos/devguild-logo.png`}
           alt="DevGuild DG"
           className={styles.loaderImg}
         />

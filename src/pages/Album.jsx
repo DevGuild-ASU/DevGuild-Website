@@ -5,44 +5,44 @@ import styles from './Album.module.css';
 
 export default function Album() {
   const featuredSlides = [
-    { src: '/photos/featured-cover.jpg', alt: 'DevGuild DG featured cover 1' },
-    { src: '/photos/featured-cover-2.jpg', alt: 'DevGuild DG featured cover 2' },
-    { src: '/photos/featured-cover-3.jpg', alt: 'DevGuild DG featured cover 3' }
+    { src: `${import.meta.env.BASE_URL}photos/featured-cover.jpg`, alt: 'DevGuild DG featured cover 1' },
+    { src: `${import.meta.env.BASE_URL}photos/featured-cover-2.jpg`, alt: 'DevGuild DG featured cover 2' },
+    { src: `${import.meta.env.BASE_URL}photos/featured-cover-3.jpg`, alt: 'DevGuild DG featured cover 3' }
   ];
 
   const libraryItems = [
-    { src: '/photos/acquaintance-party.png', alt: 'DevGuild DG members collaborating outdoors', label: 'Community sessions' },
-    { src: '/photos/featured-cover.jpg', alt: 'Students presenting a project', label: 'Project showcases' },
-    { src: '/photos/featured-cover-2.jpg', alt: 'Technology event finalists', label: 'Milestones' },
-    { src: '/photos/acquaintance-party.png', alt: 'Guild members learning together', label: 'Build days' },
-    { src: '/photos/handa360/finalists-photo.jpg', alt: 'Developer event', label: 'Partners and events' },
-    { src: '/photos/featured-cover.jpg', alt: 'DevGuild community', label: 'Guild memories' },
-    { src: '/photos/handa/handa-presentation.jpg', alt: 'Handa 360 project presentation', label: 'Handa 360', href: '#handa-album' }
+    { src: `${import.meta.env.BASE_URL}photos/acquaintance-party.png`, alt: 'DevGuild DG members collaborating outdoors', label: 'Community sessions' },
+    { src: `${import.meta.env.BASE_URL}photos/featured-cover.jpg`, alt: 'Students presenting a project', label: 'Project showcases' },
+    { src: `${import.meta.env.BASE_URL}photos/featured-cover-2.jpg`, alt: 'Technology event finalists', label: 'Milestones' },
+    { src: `${import.meta.env.BASE_URL}photos/acquaintance-party.png`, alt: 'Guild members learning together', label: 'Build days' },
+    { src: `${import.meta.env.BASE_URL}photos/handa360/finalists-photo.jpg`, alt: 'Developer event', label: 'Partners and events' },
+    { src: `${import.meta.env.BASE_URL}photos/featured-cover.jpg`, alt: 'DevGuild community', label: 'Guild memories' },
+    { src: `${import.meta.env.BASE_URL}photos/handa/handa-presentation.jpg`, alt: 'Handa 360 project presentation', label: 'Handa 360', href: '#handa-album' }
   ];
 
   const aquanonsSlides = [
-    { src: '/photos/aquanons/team-laptop.jpg', alt: 'AQUANONS team presenting the AqOne project on a laptop' },
-    { src: '/photos/aquanons/team-collaboration.jpg', alt: 'AQUANONS team collaborating during AI Fest 2026' },
-    { src: '/photos/aquanons/doreen-presentation.jpg', alt: 'AQUANONS team member presenting on stage' },
-    { src: '/photos/aquanons/team-demo.jpg', alt: 'AQUANONS team demonstrating their project' },
-    { src: '/photos/aquanons/team-pitch.jpg', alt: 'AQUANONS team pitching at AI Fest 2026' },
-    { src: '/photos/aquanons/ai-fest-selfie.jpg', alt: 'AQUANONS team selfie at AI Fest 2026' },
-    { src: '/photos/aquanons/ai-fest-team.jpg', alt: 'AQUANONS team at the AI Fest venue' },
-    { src: '/photos/aquanons/team-portrait.jpg', alt: 'AQUANONS team portrait' },
-    { src: '/photos/aquanons/project-poster.jpg', alt: 'AQUANONS project poster at AI Fest 2026' }
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/team-laptop.jpg`, alt: 'AQUANONS team presenting the AqOne project on a laptop' },
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/team-collaboration.jpg`, alt: 'AQUANONS team collaborating during AI Fest 2026' },
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/doreen-presentation.jpg`, alt: 'AQUANONS team member presenting on stage' },
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/team-demo.jpg`, alt: 'AQUANONS team demonstrating their project' },
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/team-pitch.jpg`, alt: 'AQUANONS team pitching at AI Fest 2026' },
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/ai-fest-selfie.jpg`, alt: 'AQUANONS team selfie at AI Fest 2026' },
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/ai-fest-team.jpg`, alt: 'AQUANONS team at the AI Fest venue' },
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/team-portrait.jpg`, alt: 'AQUANONS team portrait' },
+    { src: `${import.meta.env.BASE_URL}photos/aquanons/project-poster.jpg`, alt: 'AQUANONS project poster at AI Fest 2026' }
   ];
 
   const tabangSlides = [
-    { src: '/photos/tabang/presentation.jpg', alt: 'TABANG project presentation at Komsai HackReady 2026' },
-    { src: '/photos/tabang/team-discussion.jpg', alt: 'TABANG team discussing their project' },
-    { src: '/photos/tabang/team-session.jpg', alt: 'TABANG team attending a hackathon session' },
-    { src: '/photos/tabang/finalists.jpg', alt: 'TABANG team finalists at Komsai HackReady 2026' }
+    { src: `${import.meta.env.BASE_URL}photos/tabang/presentation.jpg`, alt: 'TABANG project presentation at Komsai HackReady 2026' },
+    { src: `${import.meta.env.BASE_URL}photos/tabang/team-discussion.jpg`, alt: 'TABANG team discussing their project' },
+    { src: `${import.meta.env.BASE_URL}photos/tabang/team-session.jpg`, alt: 'TABANG team attending a hackathon session' },
+    { src: `${import.meta.env.BASE_URL}photos/tabang/finalists.jpg`, alt: 'TABANG team finalists at Komsai HackReady 2026' }
   ];
 
   const handaSlides = [
-    { src: '/photos/handa/vibe-coders.jpg', alt: 'Handa 360 event presentation with The Vibe Coders 67' },
-    { src: '/photos/handa/question-and-answer.jpg', alt: 'Handa 360 question and answer session' },
-    { src: '/photos/handa/handa-presentation.jpg', alt: 'Handa 360 disaster preparedness presentation' }
+    { src: `${import.meta.env.BASE_URL}photos/handa/vibe-coders.jpg`, alt: 'Handa 360 event presentation with The Vibe Coders 67' },
+    { src: `${import.meta.env.BASE_URL}photos/handa/question-and-answer.jpg`, alt: 'Handa 360 question and answer session' },
+    { src: `${import.meta.env.BASE_URL}photos/handa/handa-presentation.jpg`, alt: 'Handa 360 disaster preparedness presentation' }
   ];
 
   return (

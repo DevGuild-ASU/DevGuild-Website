@@ -40,7 +40,7 @@ export default function Header({ onToggleChatbot }) {
         onClick={() => setIsMenuOpen(false)}
       >
         <img
-          src="/photos/devguild-logo.png"
+          src={`${import.meta.env.BASE_URL}photos/devguild-logo.png`}
           alt="DevGuild DG Logo"
           className={styles.logoMark}
         />

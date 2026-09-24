@@ -19,11 +19,11 @@ export default function Explore() {
 
   const coverSlides = [
     {
-      src: '/photos/featured-cover.jpg',
+      src: `${import.meta.env.BASE_URL}photos/featured-cover.jpg`,
       alt: 'DevGuild DG event with student developers'
     },
     {
-      src: '/photos/featured-cover-2.jpg',
+      src: `${import.meta.env.BASE_URL}photos/featured-cover-2.jpg`,
       alt: 'DevGuild DG finalists at a technology event'
     }
   ];
@@ -72,28 +72,28 @@ export default function Explore() {
                 aria-label="View the AQUANONS project story"
               >
                 <div className={styles.projectBg}>
-                  <img src="/photos/aquanons.png" alt="Aquanons logo" />
+                  <img src={`${import.meta.env.BASE_URL}photos/aquanons.png`} alt="Aquanons logo" />
                 </div>
                 <div className={styles.projectLabel}>Aquanons</div>
               </a>
 
               <div className={styles.projectCard}>
                 <div className={styles.projectBg}>
-                  <img src="/photos/handa.webp" alt="Handa 360 logo" />
+                  <img src={`${import.meta.env.BASE_URL}photos/handa.webp`} alt="Handa 360 logo" />
                 </div>
                 <div className={styles.projectLabel}>BFUR64/HANDA 360</div>
               </div>
 
               <div className={styles.projectCard}>
                 <div className={styles.projectBg}>
-                  <img src="/photos/tabang.png" alt="Tabang logo" />
+                  <img src={`${import.meta.env.BASE_URL}photos/tabang.png`} alt="Tabang logo" />
                 </div>
                 <div className={styles.projectLabel}>TABANG</div>
               </div>
 
               <div className={styles.projectCard}>
                 <div className={styles.projectBg}>
-                  <img src="/photos/sigmanhwa.png" alt="Sigmanhwa logo" />
+                  <img src={`${import.meta.env.BASE_URL}photos/sigmanhwa.png`} alt="Sigmanhwa logo" />
                 </div>
                 <div className={styles.projectLabel}>SIGMANHWA</div>
               </div>
@@ -138,7 +138,7 @@ export default function Explore() {
               <span id="explore-series-heading">Series</span>
             </div>
             <div className={styles.seriesImg}>
-              <img src="/photos/devguild-logo.png" alt="DevGuild DG logo" />
+              <img src={`${import.meta.env.BASE_URL}photos/devguild-logo.png`} alt="DevGuild DG logo" />
             </div>
             <p className={styles.seriesText}>
               <strong>DevGuild DG</strong> is written and built by <strong>ambitious makers</strong>.
@@ -239,7 +239,7 @@ export default function Explore() {
 
         <article className={styles.projectStory} id="aquanons-story">
           <div className={styles.projectStoryMedia}>
-            <img src="/photos/aquanons-project.jpg" alt="AQUANONS team at AI Fest 2026" />
+            <img src={`${import.meta.env.BASE_URL}photos/aquanons-project.jpg`} alt="AQUANONS team at AI Fest 2026" />
           </div>
           <div className={styles.projectStoryContent}>
             <span className={styles.projectStoryNumber}>01</span>

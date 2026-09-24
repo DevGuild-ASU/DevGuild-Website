@@ -70,7 +70,7 @@ export default function Home() {
             <small>TOGETHER</small>
           </div>
           <div className={styles.visualDevice}>
-            <img src="/photos/devguild-logo.png" alt="DevGuild DG" />
+            <img src={`${import.meta.env.BASE_URL}photos/devguild-logo.png`} alt="DevGuild DG" />
             <span>
               DEVGUILD<br />
               <b>DG</b>

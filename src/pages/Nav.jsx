@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export default function Nav () {
     return (
         <header>
-            <img src="/photos/devguild-logo.png" alt="DevGuild DG Logo" />
+            <img src={`${import.meta.env.BASE_URL}photos/devguild-logo.png`} alt="DevGuild DG Logo" />
 
             <ul>
                 <li>
