@@ -45,6 +45,12 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.socialIcon {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+
 .socTg {
   background: var(--color-telegram);
 }
