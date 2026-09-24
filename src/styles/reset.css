@@ -10,10 +10,6 @@ html {
   color-scheme: dark;
 }
 
-html.light {
-  color-scheme: light;
-}
-
 body {
   background-color: var(--color-bg);
   color: var(--color-text);

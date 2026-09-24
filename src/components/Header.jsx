@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle.jsx';
 import styles from './Header.module.css';
 
 /**
@@ -68,8 +67,6 @@ export default function Header({ onToggleChatbot }) {
         </nav>
 
         <div className={styles.actions}>
-          <ThemeToggle />
-
           <button
             type="button"
             className={styles.aiTrigger}

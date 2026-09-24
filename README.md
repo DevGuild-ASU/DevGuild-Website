@@ -43,13 +43,12 @@ DevGuild-Website/
     ├── main.jsx                   # Entry point with BrowserRouter & global CSS tokens
     ├── App.jsx                    # Nested route definitions inside Layout
     ├── styles/
-    │   ├── variables.css          # Semantic design tokens (dark & light themes)
+    │   ├── variables.css          # Semantic design tokens (dark theme)
     │   └── reset.css              # Reset, typography, accessibility skip-to-content
     ├── components/
     │   ├── Layout.jsx             # Layout shell (Header, Footer, Chatbot, PageLoader)
     │   ├── Header.jsx             # Sticky navigation, logo shimmer, hamburger, AI trigger
     │   ├── Footer.jsx             # Social links, site navigation, copyright
-    │   ├── ThemeToggle.jsx        # Dark/Light theme switcher with localStorage persistence
     │   ├── PageLoader.jsx         # Smooth intro animation (sessionStorage-aware)
     │   ├── Chatbot.jsx            # Floating AI assistant with offline knowledge fallback
     │   └── Slider.jsx             # Touch/swipe/keyboard responsive carousel component
@@ -67,7 +66,7 @@ DevGuild-Website/
 
 ## 🎨 Design System
 
-- **Themes:** Dark theme default with instant light theme toggle (`html.light`), persisted in `localStorage` under `devguild-theme`.
+- **Theme:** Dark theme only.
 - **Typography:** DM Sans (Body, buttons), Oswald (Headings, tags), Georgia (Italic editorial accents).
 - **CSS Strategy:** CSS Modules for component-level isolation + semantic tokens in `variables.css`.
 

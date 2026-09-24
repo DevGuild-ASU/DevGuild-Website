@@ -5,7 +5,7 @@
   --color-primary-dark: #086323;
   --color-primary-glow: rgba(17, 139, 54, 0.55);
 
-  /* Dark Theme Surfaces (Default) */
+  /* Surfaces */
   --color-bg: #0d0d0d;
   --color-bg-elevated: #111111;
   --color-bg-deep: #161616;
@@ -49,15 +49,4 @@
   --text: var(--color-text);
   --muted: var(--color-muted);
   --line: var(--color-line);
-}
-
-html.light {
-  --color-bg: #f5f2e9;
-  --color-bg-elevated: #fffdf7;
-  --color-bg-deep: #eeeae0;
-  --color-card: #fffdf7;
-  --color-border: #d5d0c5;
-  --color-text: #172521;
-  --color-muted: #64716b;
-  --color-line: #d5d0c5;
 }

@@ -215,11 +215,6 @@ export default function Privacy() {
           <h3>What we store</h3>
           <ul>
             <li>
-              <strong>Theme preference</strong> — your dark/light mode choice is saved in <code>localStorage</code> under the
-              key <code>devguild-theme</code>. This value never leaves your device and is not transmitted to any server. It
-              allows the site to remember your visual preference on return visits.
-            </li>
-            <li>
               <strong>Session visit state</strong> — a flag in <code>sessionStorage</code> (<code>devguild-site-entered</code>)
               tracking whether the initial welcome loader has played during your current browser session.
             </li>
